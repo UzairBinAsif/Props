@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fff;
+  --foreground: rgba(59, 130, 246, .5);
+}
+
+body {
+  background: var(--background);
+  font-family: sans-serif;
+}
