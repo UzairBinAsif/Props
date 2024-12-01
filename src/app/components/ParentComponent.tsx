@@ -1,17 +1,17 @@
 import React from "react"
 import ChildComponent from "./ChildComponent"
 
-const ParentComponent = (props: any) => {
+const ParentComponent = () => {
 
-    let myName = "Uzair Bin Asif";
-    let doing = "programmer";
-    let working = "eating"
+    const myName = "Uzair Bin Asif";
+    const doing = "programmer";
+    const working = "eating"
 
     return(
         <div className="flex flex-col items-center justify-around h-screen">
-            <ChildComponent x={myName}/>
-            <ChildComponent x={doing}/>
-            <ChildComponent x={working}/>
+            <ChildComponent name={myName}/>
+            <ChildComponent name={doing}/>
+            <ChildComponent name={working}/>
         </div>
     )
 }
